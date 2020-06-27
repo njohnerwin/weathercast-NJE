@@ -44,6 +44,8 @@ function populateCurrent(cityName, stateCode) {
                     $("#current").empty();
                     $("#fiveday").empty();
 
+                    console.log(data);
+
                     uvIndex = data.current.uvi;
                     dateString = `(${now.format("M")}/${now.format("D")}/${now.format("YYYY")})`; 
 
