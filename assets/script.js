@@ -180,7 +180,13 @@ function inputTrim(input) {
                 input.unshift(newStr);
                 nameFixer = true;
             } 
+        else {
+            nameFixer = false;
+        }
         input.splice(1, 1);
+    }
+    else {
+        nameFixer = false;
     }
 
     console.log(input);
@@ -205,7 +211,13 @@ function searchByCity(input) {
 $(document).ready(function () {
 
     for (var x in cityList) {
-        printCity(cityList[x].city, cityList[x].state);
+        if (cityList[x].city.includes("%20") === true) {
+            let displayName = cityList[x].city.replace("%20", " ");
+            printCity(displayName, cityList[x].state);
+        }
+        else {
+            printCity(cityList[x].city, cityList[x].state);
+        }
     }
 
     $.ajax({
