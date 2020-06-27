@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    
+    <meta charset="utf-8">
+    <title>Your 5-Day Forecast!</title>
+
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!--Moment.js-->
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.26.0/moment.min.js"></script>
+
+    <!--JQuery-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/52aaf0ce08.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+   
+    <header><h1>Weather Dashboard</h1></header>
+    
+    <aside>
+      <input type="text" placeholder="Search for a city..." id="city-input">
+      <button type="submit" id="submit-button"><i class="fa fa-search"></i></button>
+      <button id="clear">clear</button>
+      <div id="cities"></div>
+    </aside>
+
+    <main>
+    
+      <div id="current"></div>
+    
+      <div id="fiveday"></div>
+    
+    </main>
+
+  </body>
+
+  <script src="assets/script.js"></script>
+
+</html>

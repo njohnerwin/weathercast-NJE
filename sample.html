@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Your 5-Day Forecast!</title>
+    <script src="https://kit.fontawesome.com/52aaf0ce08.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!--JQuery-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  </head>
+
+  <body>
+   
+    <header><h1>Weather Dashboard</h1></header>
+    
+    <aside>
+      <input type="text" placeholder="Search for a city...">
+      <button type="submit"><i class="fa fa-search"></i></button>
+      <div id="cities">
+          <a href="#">Atlanta</a>
+          <a href="#">Atlanta</a>
+          <a href="#">Atlanta</a>
+          <a href="#">Atlanta</a>
+          <a href="#">Atlanta</a>
+          <a href="#">Atlanta</a>
+      </div>
+    </aside>
+
+    <main>
+    
+      <div id="current">
+          <h2>Atlanta (8/15/2019)</h2>
+          <p>Temperature: 90.9 °F</p>
+          <p>Humidity: 41%</p>
+          <p>Wind Speed: 4.7 MPH</p>
+          <p>UV Index: <span id="UVI">9.49</span></p>
+      </div>
+    
+      <div id="fiveday">
+        <h2>Five-Day Forecast:</h2>
+          <div class="card">
+              <h3>8/16/2019</h3>
+              <i class="fas fa-sun"></i>
+              <p>Temp: 86.84 °F</p>
+              <p>Humidity: 43%</p>
+          </div>
+          <div class="card">
+            <h3>8/17/2019</h3>
+            <i class="fas fa-sun"></i>
+            <p>Temp: 86.84 °F</p>
+            <p>Humidity: 43%</p>
+          </div>
+          <div class="card">
+            <h3>8/18/2019</h3>
+            <i class="fas fa-sun"></i>
+            <p>Temp: 86.84 °F</p>
+            <p>Humidity: 43%</p>
+          </div>
+          <div class="card">
+            <h3>8/19/2019</h3>
+            <i class="fas fa-sun"></i>
+            <p>Temp: 86.84 °F</p>
+            <p>Humidity: 43%</p>
+          </div>
+          <div class="card">
+            <h3>8/20/2019</h3>
+            <i class="fas fa-sun"></i>
+            <p>Temp: 86.84 °F</p>
+            <p>Humidity: 43%</p>
+          </div>
+      </div>
+    
+    </main>
+
+  </body>
+
+  <script src="assets/script.js"></script>
+
+</html>
